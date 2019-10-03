@@ -49,8 +49,8 @@ public class AnimalController {
             newAnimal.setType(animal.getType());
             newAnimal.setSize(animal.getSize());
             newAnimal.setAge(animal.getAge());
-            newAnimal.setOwnerName(animal.getOwnerName());
-            newAnimal.setOwnerEmail(animal.getOwnerEmail());
+            newAnimal.setOwner(animal.getOwner());
+            newAnimal.setEmail(animal.getEmail());
 
             Animal updatedAnimal = service.update(newAnimal);
             return ResponseEntity.ok(updatedAnimal);
